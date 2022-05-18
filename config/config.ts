@@ -3,9 +3,7 @@ import { defineConfig } from 'umi';
 import { join } from 'path';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
-
 const { REACT_APP_ENV } = process.env;
-
 export default defineConfig({
   hash: true,
   antd: {},
@@ -92,6 +90,12 @@ export default defineConfig({
           path: '/dashboard/workplace',
           component: './dashboard/workplace',
         },
+        {
+          name: '分析页',
+          icon: 'smile',
+          path: '/dashboardanalysistest',
+          component: './DashboardAnalysisTest',
+        },
       ],
     },
     {
@@ -120,6 +124,12 @@ export default defineConfig({
           icon: 'smile',
           path: '/form/advanced-form',
           component: './form/advanced-form',
+        },
+        {
+          name: '分步表单',
+          icon: 'smile',
+          path: '/formstepformtest',
+          component: './FormStepFormTest',
         },
       ],
     },
